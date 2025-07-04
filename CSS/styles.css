@@ -1,0 +1,148 @@
+:root {
+  --bg-color: #343d46;
+  --sidebar-color: #4f5b66;
+  --text-color: #c0c5ce;
+  --secondary-text: #65737e;
+  --accent-color: #a7adba;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+}
+body{
+    background-color: var(--bg-color);
+    margin: 0;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+#scrambler-and-timer{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+#scrambler{
+    background-color: var(--secondary-text);
+    color: var(--bg-color);
+    height: clamp(100px, 25%, 200px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+#scramble-options{
+    font-size: 1rem;
+    text-align: center;
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+    border: none;
+    outline: none;
+    border-radius: 1000px;
+    width: 150px;
+}
+#scramble-options:hover{
+  background-color: var(--text-color);
+  color: var(--bg-color);
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+#scramble-type{
+    display: flex;
+    gap: 25px;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+#scramble{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+#scramble-p{
+    color: var(--bg-color);
+    text-align: center;
+    font-size: 2.25rem;
+    letter-spacing: 0.3rem;
+}
+#change-scramble{
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+    height: 2rem;
+    width: 15%;
+    border: none;
+    border-radius: 1000px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+#change-scramble:hover{
+  background-color: var(--text-color);
+  color: var(--bg-color);
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: all 0.2s ease-in-out;
+}
+#timer{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#timer-p{
+    font-size: clamp(5rem, 10vw, 10rem);
+    letter-spacing: 0.1em;
+    font-family: 'Digital-7 Mono', monospace;
+    color: var(--text-color);
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+
+  #scrambler {
+    height: auto;
+    padding: 15px 10px;
+    gap: 10px;
+  }
+
+  #scramble-type {
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1rem;
+    align-items: center;
+  }
+
+  #scramble-options {
+    width: 100px;
+    font-size: 0.9rem;
+  }
+
+  #scramble-p {
+    font-size: 1.75rem;
+    padding: 0 10px;
+  }
+
+  #change-scramble {
+    width: 120px;
+    font-size: 0.9rem;
+  }
+
+  #timer-p {
+    font-size: 4rem;
+    text-align: center;
+    padding: 10px;
+  }
+}

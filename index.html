@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fontlibrary.org//face/digital-7-mono" type="text/css"/>
+    <title>Rubick's Cube App</title>
+</head>
+<body>
+    <main>
+        <div id="scrambler-and-timer">
+            <div id="scrambler">
+                <form action="" id="scramble-type">
+                    <label for="scramble-options">Scramble Type</label>
+                    <select name="scramble-options" id="scramble-options">
+                        <option value="3x3">3x3</option>
+                        <option value="2x2">2x2</option>
+                        <option value="oll">OLL</option>
+                        <option value="pll">PLL</option>
+                    </select>
+                </form>
+
+                <div id="scramble">
+                    <p id="scramble-p"></p>
+                    <button id="change-scramble" aria-label="Generate new scramble">Change</button>
+                </div>
+            </div>
+
+            <div id="timer">
+                <p id="timer-p">00:00</p>
+            </div>
+        </div>
+    </main>
+
+    <script type="module" src="JS/script.js"></script>
+</body>
+</html>
