@@ -1,11 +1,11 @@
 let oll = [];
 let pll = [];
 
-fetch('oll.json')
+fetch('./oll.json')
   .then(res => res.json())
   .then(data => oll = data);
 
-fetch('pll.json')
+fetch('./pll.json')
   .then(res => res.json())
   .then(data => pll = data);
 

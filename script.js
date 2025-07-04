@@ -1,7 +1,7 @@
-import { scramble } from "scramble.js";
-import { setUpTimer } from "timer.js";
-import { runTimer } from "timer.js";
-import { stopTimer } from "timer.js";
+import { scramble } from "./scramble.js";
+import { setUpTimer } from "./timer.js";
+import { runTimer } from "./timer.js";
+import { stopTimer } from "./timer.js";
 
 let scrambleType = '3x3';
 let myTimeOut;
